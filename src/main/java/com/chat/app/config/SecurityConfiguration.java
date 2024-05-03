@@ -21,10 +21,11 @@ public class SecurityConfiguration {
     @Bean
     public UserDetailsService userDetailsService(PasswordEncoder encoder) {
 
-        UserDetails admin = User.withUsername("anil").password(encoder.encode("password")).roles("USER").build();
-        UserDetails user = User.withUsername("dabas").password(encoder.encode("password")).roles("USER").build();
+        UserDetails user1 = User.withUsername("anil").password(encoder.encode("password")).roles("USER").build();
+        UserDetails user2 = User.withUsername("dabas").password(encoder.encode("password")).roles("USER").build();
+        UserDetails user3 = User.withUsername("dabas").password(encoder.encode("password")).roles("USER").build();
 
-        return new InMemoryUserDetailsManager(admin, user);
+        return new InMemoryUserDetailsManager(user1, user2,user3);
     }
 
     @Bean
