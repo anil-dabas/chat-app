@@ -23,7 +23,7 @@ public class SecurityConfiguration {
 
         UserDetails user1 = User.withUsername("anil").password(encoder.encode("password")).roles("USER").build();
         UserDetails user2 = User.withUsername("dabas").password(encoder.encode("password")).roles("USER").build();
-        UserDetails user3 = User.withUsername("dabas").password(encoder.encode("password")).roles("USER").build();
+        UserDetails user3 = User.withUsername("dummy").password(encoder.encode("password")).roles("USER").build();
 
         return new InMemoryUserDetailsManager(user1, user2,user3);
     }
