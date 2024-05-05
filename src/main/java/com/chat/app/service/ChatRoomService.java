@@ -46,20 +46,6 @@ public class ChatRoomService {
         }
     }
 
-/*    private void handleChatActions(WebSocketSession session, JsonObject jsonObject) {
-        Action action = fromActionString(jsonObject.get(ACTION.name()).getAsString());
-        if (JOIN.equals(action) || LEAVE.equals(action)){
-            chatRoom.handleChatRoomSubscription(action, session);
-        }else if(FETCH.equals(action) && chatRoom.isMemberOfTheChatRoom(getUserName(session))){
-            fetchAndSendToUser(session);
-        } else if (DELETE.equals(action) && chatRoom.isMemberOfTheChatRoom(getUserName(session))) {
-            if(jsonObject.has("ID"))
-                deleteMessageFromChatRoom(jsonObject.get("ID").getAsString());
-        } else if (HISTORY.equals(action) && chatRoom.isMemberOfTheChatRoom(getUserName(session))) {
-            fetchFromDatabaseAndSend(session);
-        }
-    }*/
-
 
     private void handleChatActions(WebSocketSession session, JsonObject jsonObject) {
         Action action = Action.fromActionString(jsonObject.get(ACTION.name()).getAsString());
