@@ -1,7 +1,7 @@
-package com.chat.app;
+package com.chat.app.domainvalue;
 
 public enum Action {
-    JOIN,LEAVE,MESSAGE;
+    JOIN,LEAVE,FETCH,DELETE,HISTORY;
 
     public static Action fromActionString(String value) {
         for (Action positionType : Action.values()) {

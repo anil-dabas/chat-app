@@ -24,11 +24,6 @@ public class ChatController {
         this.messageService = messageService;
     }
 
-/*    @GetMapping()
-    public void websocket(@AuthenticationPrincipal UserDetails userDetails){
-        System.out.println("I am here ");
-    }*/
-
     @PostMapping("/send")
     public void sendMessage(@RequestBody() String message, @AuthenticationPrincipal UserDetails userDetails) throws UserNotSubscribed {
         chatRoom.addMessage(message,userDetails.getUsername());
