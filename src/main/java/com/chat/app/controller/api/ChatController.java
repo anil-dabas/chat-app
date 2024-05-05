@@ -1,4 +1,4 @@
-package com.chat.app.controller;
+package com.chat.app.controller.api;
 
 import com.chat.app.exception.UserNotSubscribed;
 import com.chat.app.model.Message;
@@ -9,7 +9,6 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 @RestController
@@ -24,6 +23,11 @@ public class ChatController {
         this.chatRoom = chatRoom;
         this.messageService = messageService;
     }
+
+/*    @GetMapping()
+    public void websocket(@AuthenticationPrincipal UserDetails userDetails){
+        System.out.println("I am here ");
+    }*/
 
     @PostMapping("/send")
     public void sendMessage(@RequestBody() String message, @AuthenticationPrincipal UserDetails userDetails) throws UserNotSubscribed {
