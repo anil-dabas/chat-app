@@ -32,6 +32,9 @@
 #### Server scalability
 
 I have Ideas for server scalability that I can discuss during the interview process 
+
+1. Distributed Redis 
+2. Kafka
   
 
 ## How to for the application 
