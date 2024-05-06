@@ -1,0 +1,356 @@
+{
+  "collection": {
+    "info": {
+      "_postman_id": "419e95e5-7307-40f4-8ad5-41a35a28f73f",
+      "name": "Chat Server",
+      "description": "This is a chat server for Anil",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2024-05-04T07:50:13.000Z",
+      "uid": "34682949-419e95e5-7307-40f4-8ad5-41a35a28f73f",
+      "createdAt": null,
+      "lastUpdatedBy": null
+    },
+    "item": [
+      {
+        "name": "localhost:8080/chat/receive anil",
+        "id": "eb2b1c96-a995-4148-bafe-5b595f1fa67d",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "auth": {
+            "type": "basic",
+            "basic": [
+              {
+                "key": "username",
+                "value": "anil",
+                "type": "string"
+              },
+              {
+                "key": "password",
+                "value": "password",
+                "type": "string"
+              }
+            ]
+          },
+          "method": "GET",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "localhost:8080/chat/receive",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "chat",
+              "receive"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "34682949-eb2b1c96-a995-4148-bafe-5b595f1fa67d"
+      },
+      {
+        "name": "localhost:8080/chat/receive dabas",
+        "id": "a1304afd-c1f3-4e7a-88a8-df01a1535004",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "auth": {
+            "type": "basic",
+            "basic": [
+              {
+                "key": "username",
+                "value": "anil",
+                "type": "string"
+              },
+              {
+                "key": "password",
+                "value": "password",
+                "type": "string"
+              }
+            ]
+          },
+          "method": "GET",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "localhost:8080/chat/receive",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "chat",
+              "receive"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "34682949-a1304afd-c1f3-4e7a-88a8-df01a1535004"
+      },
+      {
+        "name": "localhost:8080/chat/history anil",
+        "id": "9e8d9f29-89c8-41c5-b8eb-02bc856510a1",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "auth": {
+            "type": "basic",
+            "basic": [
+              {
+                "key": "username",
+                "value": "anil",
+                "type": "string"
+              },
+              {
+                "key": "password",
+                "value": "password",
+                "type": "string"
+              }
+            ]
+          },
+          "method": "GET",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "localhost:8080/chat/receive",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "chat",
+              "receive"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "34682949-9e8d9f29-89c8-41c5-b8eb-02bc856510a1"
+      },
+      {
+        "name": "localhost:8080/chat/send anil",
+        "id": "2ea83eb6-b058-4c38-b45c-03cade1f7f68",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "auth": {
+            "type": "basic",
+            "basic": [
+              {
+                "key": "username",
+                "value": "anil",
+                "type": "string"
+              },
+              {
+                "key": "password",
+                "value": "password",
+                "type": "string"
+              }
+            ]
+          },
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "Its going good I am working on a chat messanger ",
+            "options": {
+              "raw": {
+                "language": "text"
+              }
+            }
+          },
+          "url": {
+            "raw": "localhost:8080/chat/send",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "chat",
+              "send"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "34682949-2ea83eb6-b058-4c38-b45c-03cade1f7f68"
+      },
+      {
+        "name": "localhost:8080/chat/subscribe",
+        "id": "ee2d3665-dc86-4f3c-99c9-6331cb9842e7",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "auth": {
+            "type": "basic",
+            "basic": [
+              {
+                "key": "username",
+                "value": "anil",
+                "type": "string"
+              },
+              {
+                "key": "password",
+                "value": "password",
+                "type": "string"
+              }
+            ]
+          },
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "true",
+            "options": {
+              "raw": {
+                "language": "text"
+              }
+            }
+          },
+          "url": {
+            "raw": "localhost:8080/chat/subscribe",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "chat",
+              "subscribe"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "34682949-ee2d3665-dc86-4f3c-99c9-6331cb9842e7"
+      },
+      {
+        "name": "localhost:8080/chat/send dabas",
+        "id": "49511748-16c2-4dc7-b3ad-a1bdff411860",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "auth": {
+            "type": "basic",
+            "basic": [
+              {
+                "key": "username",
+                "value": "dabas",
+                "type": "string"
+              },
+              {
+                "key": "password",
+                "value": "password",
+                "type": "string"
+              }
+            ]
+          },
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "Hello Anil I am fine How are you ?",
+            "options": {
+              "raw": {
+                "language": "text"
+              }
+            }
+          },
+          "url": {
+            "raw": "localhost:8080/chat/send",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "chat",
+              "send"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "34682949-49511748-16c2-4dc7-b3ad-a1bdff411860"
+      },
+      {
+        "name": "New Request",
+        "id": "f33cbb2b-0996-4f38-8bd2-498498fed843",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": []
+        },
+        "response": [],
+        "uid": "34682949-f33cbb2b-0996-4f38-8bd2-498498fed843"
+      }
+    ],
+    "auth": {
+      "type": "basic",
+      "basic": [
+        {
+          "key": "password",
+          "value": "password",
+          "type": "string"
+        },
+        {
+          "key": "username",
+          "value": "anil",
+          "type": "string"
+        }
+      ]
+    },
+    "event": [
+      {
+        "listen": "prerequest",
+        "script": {
+          "id": "c1d4ad9e-3550-4a0b-9d47-774e699cbf3f",
+          "type": "text/javascript",
+          "packages": {},
+          "exec": [
+            ""
+          ]
+        }
+      },
+      {
+        "listen": "test",
+        "script": {
+          "id": "598ac534-6e6e-4226-a35f-c655dabf9388",
+          "type": "text/javascript",
+          "packages": {},
+          "exec": [
+            ""
+          ]
+        }
+      }
+    ]
+  }
+}
