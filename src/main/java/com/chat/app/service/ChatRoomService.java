@@ -24,16 +24,14 @@ import static com.chat.app.util.ChatUtil.getUserName;
 public class ChatRoomService {
 
     private final WsChatRoom chatRoom;
+    private final MessageService messageService;
+    private final ObjectMapper mapper;
 
     @Autowired
-    private MessageService messageService;
-
-    @Autowired
-    ObjectMapper mapper;
-
-    @Autowired
-    public ChatRoomService(WsChatRoom chatRoom){
+    public ChatRoomService(WsChatRoom chatRoom,MessageService messageService,ObjectMapper mapper){
         this.chatRoom = chatRoom;
+        this.messageService = messageService;
+        this.mapper = mapper;
     }
 
     public void handleChatFunctions(WebSocketSession session, String payload) {
