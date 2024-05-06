@@ -105,3 +105,7 @@ I have Ideas for server scalability that I can discuss during the interview proc
 - I am adding few screenshots from my POSTMAN to show the testcases 
 - I have added the test case for services layer and the chat rooms 
 - I assumed there are separate chat rooms for Websockets and  REST API
+
+## Test Coverage evidence 
+
+![img.png](img.png)
