@@ -6,6 +6,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.socket.TextMessage;
@@ -21,6 +22,7 @@ import static com.chat.app.domainvalue.ChatFunction.MESSAGE;
 import static com.chat.app.util.ChatUtil.getUserName;
 
 @Service
+@Slf4j
 public class ChatRoomService {
 
     private final WsChatRoom chatRoom;
@@ -35,7 +37,12 @@ public class ChatRoomService {
     }
 
     public void handleChatFunctions(WebSocketSession session, String payload) {
-        JsonObject jsonMessage = JsonParser.parseString(payload).getAsJsonObject();
+        JsonObject jsonMessage = new JsonObject();
+        try{
+            jsonMessage = JsonParser.parseString(payload).getAsJsonObject();
+        }catch(Exception ex){
+            log.error("Please provide a valid format for the input message");
+        }
         if(jsonMessage.has(ACTION.name())){
             handleChatActions(session, jsonMessage);
         }
